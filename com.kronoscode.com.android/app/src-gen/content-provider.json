@@ -1,0 +1,75 @@
+{
+  "type": "content-provider",
+  "packageName": "com.kronoscode.cacao.android.app",
+  "databaseName": "cacao",
+  "databaseVersion": 11
+  ,
+  "models": [
+    {
+      "name": "Guide",
+      "members" : [
+        {
+            "type":"String",
+            "name":"name"
+        },
+        {
+            "type":"String",
+            "name":"tags"
+        }
+      ],
+      "parcelable": true
+    },
+    {
+      "name": "Event",
+      "members" : [
+        {
+          "type":"String",
+          "name":"eventId"
+        },
+        {
+          "type":"String",
+          "name":"description"
+        },
+        {
+          "type":"String",
+          "name":"startDate"
+        },
+        {
+          "type":"String",
+          "name":"endDate"
+        }
+      ],
+      "parcelable": true
+    },
+    {
+        "name": "GuideVersion",
+        "members" : [
+            {
+                "type":"String",
+                "name":"name"
+            },
+            {
+                "type":"String",
+                "name":"file"
+            },
+            {
+                "type":"String",
+                "name":"date"
+            },
+            {
+                "type":"String",
+                "name":"num_version"
+            },
+            {
+                "type":"String",
+                "name":"path"
+            },
+            {
+              "type":"String",
+              "name":"tags"
+            }
+        ],
+        "parcelable": true
+    }
+  ]
+}

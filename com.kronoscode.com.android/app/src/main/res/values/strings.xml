@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Cacao Móvil</string>
+    <string name="long_app_name">Guías de Cacao</string>
+    <string name="app_description">Aprendiendo e innovando sobre el cacao en sistemas agroforestales</string>
+
+    <string name="title">Guías de Cacao</string>
+    <string name="title_files_provider">SDCARD - GUIAS ZIP</string>
+
+    <string name="unzip_msg">Descomprimiendo... Espere un momento</string>
+    <string name="action_refresh">Actualizar</string>
+    <string name="action_import">Importar desde SDCARD</string>
+    <string name="title_activity_guie">GuieActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_update_api">Cambiar URL de servicio</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_about">Acerca de</string>
+    <string name="title_load_sdCard">Importar desde Memoria Externa</string>
+    <string name="guide_list">Lista de Guías</string>
+    <string name="download">Descargar</string>
+    <string name="open">Abrir</string>
+    <string name="internet_not_available">No hay conexión a internet</string>
+    <string name="no_results">No hay resultados</string>
+    <string name="youtube_video">http://cacaomovil.com/videotutorial/</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="downloading_text">Descargando guía..</string>
+    <string name="not_manifest_found">No se encontro archivo manifest</string>
+    <string name="error">Algo malo ha pasado</string>
+    <string name="cancel_download_msg">¿Está seguro que desea cancelar la descarga?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="error_on_unzip">Un error ha ocurrido al descomprimir la guía</string>
+    <string name="file_explorer_file">Necesitas instalar un explorador de archivos</string>
+    <string name="not_content">No hay contenido</string>
+    <string name="error_download_retry">Hubo un error al descargar el archivo, ¿Desea intentarlo nuevamente?</string>
+    <string name="not_information_saved">No information saved</string>
+    <string name="search">Buscar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="current_api">API Actual</string>
+    <string name="location">"Ubicación: "</string>
+    <string name="select">Seleccionar</string>
+    <string name="select_file">"Desea Seleccionar este archivo:  "</string>
+    <string name="download_guide_msg">Esta guía no esta descargada en su dispositivo, ¿Desea iniciar el proceso de descarga?</string>
+    <string name="start_download">Iniciar Descarga</string>
+    <string name="no_index_found">El Archivo índice no existe en esta carpeta</string>
+    <string name="new_guide_version_msg">Hay una nueva versión de esta guía, desea descargarla?</string>
+    <string name="open_current_guide">Abrir Actual</string>
+    <string name="ok">Ok</string>
+    <string name="cambiar_folder_de_gu_as">Cambiar Folder de Guías</string>
+
+
+    <string name="invitation_title">Envía una invitación</string>
+    <string name="invitation_message">Aprendiendo e innovando sobre el cacao en sistemas agroforestales</string>
+    <string name="invitation_deep_link">http://cacaomovil.com</string>
+    <string name="invitation_custom_image">http://cacaomovil.com/static/image/app-invite.png</string>
+    <string name="invitation_cta">Instalar</string>
+    <string name="invitation_subject">Prueba Cacaomovil</string>
+    <string name="enviar_invitacion">Enviar Invitación</string>
+
+</resources>

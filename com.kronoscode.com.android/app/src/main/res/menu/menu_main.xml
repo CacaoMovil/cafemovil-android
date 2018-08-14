@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="@string/search"/>
+
+    <item android:id="@+id/action_refresh" android:title="@string/action_refresh"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_import" android:title="@string/action_import"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_update_api" android:title="@string/action_update_api"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_send_invite" android:title="@string/enviar_invitacion"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+</menu>
