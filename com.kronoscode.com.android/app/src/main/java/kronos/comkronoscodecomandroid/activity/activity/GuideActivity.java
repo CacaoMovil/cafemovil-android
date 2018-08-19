@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -14,12 +13,13 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.SearchView;
 
 import java.io.File;
 
 import javax.inject.Inject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import de.greenrobot.event.EventBus;
 import kronos.comkronoscodecomandroid.R;
@@ -29,12 +29,14 @@ import kronos.comkronoscodecomandroid.activity.event.ToastEvent;
 import pocketknife.BindExtra;
 import pocketknife.PocketKnife;
 
+import static android.app.Activity.RESULT_OK;
+
 public class GuideActivity extends BaseActivity {
 
-    @Bind(R.id.webview)
+    @BindView(R.id.webview)
     WebView browser;
 
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
 
     @BindExtra(Constants.FILE)

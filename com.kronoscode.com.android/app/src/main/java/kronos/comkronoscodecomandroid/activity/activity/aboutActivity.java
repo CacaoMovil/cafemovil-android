@@ -9,17 +9,17 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import kronos.comkronoscodecomandroid.R;
 import pocketknife.PocketKnife;
 
 public class aboutActivity extends BaseActivity {
 
-    @Bind(R.id.webview)
+    @BindView(R.id.webview)
     WebView webView;
 
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
 
     @Override

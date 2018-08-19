@@ -10,7 +10,7 @@ import java.util.Date;
 
 import javax.inject.Inject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import de.greenrobot.event.EventBus;
@@ -34,13 +34,13 @@ import retrofit.Retrofit;
  */
 public class WelcomeActivity extends BaseActivity {
 
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView title;
 
-    @Bind(R.id.welcome_title)
+    @BindView(R.id.welcome_title)
     TextView welcomeTitle;
 
-    @Bind(R.id.logo)
+    @BindView(R.id.logo)
     ImageView logoImageView;
 
     @Inject

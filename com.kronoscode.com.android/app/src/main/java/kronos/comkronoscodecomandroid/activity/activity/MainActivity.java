@@ -67,7 +67,7 @@ import java.util.Map;
 
 import javax.inject.Inject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import de.greenrobot.event.EventBus;
 import kronos.comkronoscodecomandroid.R;
@@ -110,16 +110,16 @@ public class MainActivity extends BaseActivity implements LoaderManager.LoaderCa
     private SearchView searchView;
     private DownloadFileAsync task;
 
-    @Bind(R.id.empty)
+    @BindView(R.id.empty)
     TextView empty;
 
-    @Bind(R.id.list)
+    @BindView(R.id.list)
     ExpandableListView guidesList;
 
-    @Bind(R.id.empty_container)
+    @BindView(R.id.empty_container)
     ViewGroup emptyContainer;
 
-    @Bind(R.id.list_container)
+    @BindView(R.id.list_container)
     ViewGroup listContainer;
 
     @NotRequired
@@ -134,7 +134,7 @@ public class MainActivity extends BaseActivity implements LoaderManager.LoaderCa
     @BindExtra(Constants.FILENAME)
     String file;
 
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
 
     @Inject

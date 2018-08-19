@@ -11,23 +11,23 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import kronos.comkronoscodecomandroid.R;
 import pocketknife.PocketKnife;
 
 public class EventActivity extends BaseActivity {
 
-    @Bind(R.id.title)
+    @BindView(R.id.title)
     TextView title;
 
-    @Bind(R.id.description)
+    @BindView(R.id.description)
     TextView description;
 
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
 
-    @Bind(R.id.date1)
+    @BindView(R.id.date1)
     TextView date;
 
     @Override
