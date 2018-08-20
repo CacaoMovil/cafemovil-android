@@ -5,13 +5,13 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#000</item>
         <item name="colorPrimaryDark">#000</item>
-        <item name="colorAccent">#99bd43</item>
+        <item name="colorAccent">@color/toolbar_header</item>
     </style>
 
 
     <style name="MyActionBar"
         parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">#99bd43</item>
+        <item name="android:background">@color/toolbar_header</item>
         <item name="android:textColor">#ffffff</item>
     </style>
 

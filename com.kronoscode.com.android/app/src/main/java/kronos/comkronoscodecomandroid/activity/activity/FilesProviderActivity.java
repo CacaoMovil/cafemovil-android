@@ -40,7 +40,7 @@ public class FilesProviderActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_files_provider);
 
-        mPath = (TextView) findViewById(R.id.path);
+        mPath = findViewById(R.id.path);
         getDir(mDir);
     }
 

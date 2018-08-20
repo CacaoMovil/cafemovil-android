@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.content.Loader;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -155,8 +156,6 @@ public class MainActivity extends BaseActivity implements LoaderManager.LoaderCa
     @Inject
     NetworkUtil networkUtil;
 
-    private GoogleApiClient mGoogleApiClient;
-
     @Inject
     SettingsService settingsService2;
     /**
@@ -180,6 +179,8 @@ public class MainActivity extends BaseActivity implements LoaderManager.LoaderCa
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setHomeButtonEnabled(true);
+            getSupportActionBar().setIcon(R.drawable.ic_back_btn_home);
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back_home);
         }
 
         setTitle(getString(R.string.guide_list));
@@ -208,6 +209,10 @@ public class MainActivity extends BaseActivity implements LoaderManager.LoaderCa
         inflater.inflate(R.menu.menu_main, menu);
 
         searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
+
+        EditText searchEditText = searchView.findViewById(android.support.v7.appcompat.R.id.search_src_text);
+        searchEditText.setTextColor(getResources().getColor(R.color.white));
+        searchEditText.setHintTextColor(getResources().getColor(R.color.white));
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -936,7 +941,7 @@ public class MainActivity extends BaseActivity implements LoaderManager.LoaderCa
     }
 
     private void showAppInvites() {
-        mGoogleApiClient = new GoogleApiClient.Builder(this)
+        GoogleApiClient mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addApi(AppInvite.API)
                 .enableAutoManage(this, this)
                 .build();

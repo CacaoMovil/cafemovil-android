@@ -38,7 +38,7 @@ public class ImageUtil {
      */
     public void loadImage(ImageView imageView, String url) {
         if (!TextUtils.isEmpty(url)) {
-            Picasso.with(application.getBaseContext())
+            Picasso.get()
                     .load(url)
                     .into(imageView);
         } else {

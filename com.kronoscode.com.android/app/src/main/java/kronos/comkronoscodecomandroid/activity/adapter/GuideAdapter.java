@@ -23,10 +23,8 @@ import javax.inject.Inject;
 
 import kronos.comkronoscodecomandroid.R;
 import kronos.comkronoscodecomandroid.activity.App;
-import kronos.comkronoscodecomandroid.activity.constants.Constants;
 import kronos.comkronoscodecomandroid.activity.prefs.PersistentStore;
 import kronos.comkronoscodecomandroid.activity.utils.FolderUtil;
-import kronos.comkronoscodecomandroid.activity.utils.GuideUtils;
 
 public class GuideAdapter extends BaseExpandableListAdapter implements Filterable {
 
@@ -91,9 +89,9 @@ public class GuideAdapter extends BaseExpandableListAdapter implements Filterabl
         if (convertView==null) {
             convertView = mInflater.inflate(R.layout.group_item,null);
             holder = new ChildrenHolder();
-            holder.mDate = (TextView)convertView.findViewById(R.id.date);
-            holder.mVersion = (TextView)convertView.findViewById(R.id.version);
-            holder.mAction= (Button)convertView.findViewById(R.id.action);
+            holder.mDate = convertView.findViewById(R.id.date);
+            holder.mVersion = convertView.findViewById(R.id.version);
+            holder.mAction= convertView.findViewById(R.id.action);
 
             convertView.setTag(holder);
         } else holder = (ChildrenHolder)convertView.getTag();
@@ -124,9 +122,10 @@ public class GuideAdapter extends BaseExpandableListAdapter implements Filterabl
         if (convertView == null) {
             convertView = mInflater.inflate(R.layout.expandable_list_group, parent, false);
             holder = new GroupHolder();
-            holder.group = (TextView)convertView.findViewById(R.id.name);
-            holder.guideNumber = (TextView)convertView.findViewById(R.id.guide_number);
+            holder.group = convertView.findViewById(R.id.name);
+            holder.guideNumber = convertView.findViewById(R.id.guide_number);
             convertView.setTag(holder);
+
         } else holder = (GroupHolder)convertView.getTag();
 
         convertView.setFocusable(false);

@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Cacao Móvil</string>
-    <string name="long_app_name">Guías de Cacao</string>
+    <string name="app_name">INCAFE</string>
+    <string name="long_app_name">Guías de INCAFE </string>
     <string name="app_description">Aprendiendo e innovando sobre el cacao en sistemas agroforestales</string>
 
-    <string name="title">Guías de Cacao</string>
+    <string name="title">Guías de INCAFE </string>
     <string name="title_files_provider">SDCARD - GUIAS ZIP</string>
 
     <string name="unzip_msg">Descomprimiendo... Espere un momento</string>
@@ -55,5 +55,8 @@
     <string name="invitation_cta">Instalar</string>
     <string name="invitation_subject">Prueba Cacaomovil</string>
     <string name="enviar_invitacion">Enviar Invitación</string>
+    <string name="title_welcome">Del instituto Hondureño del café IHCAFE</string>
+    <string name="title_2_welcome">Cartillas para café</string>
+    <string name="title_3_welcome">Por una caficultura rentable y competitiva</string>
 
 </resources>

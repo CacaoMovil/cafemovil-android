@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -13,7 +14,6 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.SearchView;
 
 import java.io.File;
 
@@ -59,6 +59,7 @@ public class GuideActivity extends BaseActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setHomeButtonEnabled(true);
             setTitle(getIntent().getStringExtra("name"));
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back_home);
         }
 
         if (getIntent().getExtras() != null) {
