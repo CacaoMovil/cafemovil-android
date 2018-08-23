@@ -131,6 +131,7 @@
             android:id="@+id/lutheran"
             android:layout_alignParentBottom="true"
             android:layout_width="100dp"
+            android:layout_marginLeft="10dp"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_welcome_logo_footer" />
 
