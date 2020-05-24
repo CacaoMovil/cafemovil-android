@@ -4,7 +4,7 @@ buildscript {
     repositories {
         mavenCentral()
         maven { url "https://jcenter.bintray.com" }
-        maven { url "http://repo1.maven.org/maven2" }
+        maven { url "https://repo1.maven.org/maven2" }
         google()
     }
     dependencies {
@@ -19,7 +19,7 @@ buildscript {
 
 allprojects {
     repositories {
-        maven { url "http://dl.bintray.com/populov/maven" }
+        maven { url "https://dl.bintray.com/populov/maven" }
         mavenCentral()
         google()
     }
